@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- created by:Vishwanath Malakar for X Project, Email : -->
+
+<head>
+	<title>Home - Automation</title>
+	<meta charset="utf-8">
+	<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+	<meta http-equiv="x-ua-compatible" content="IE=10">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="icon" type="image/gif" href="Images/logo.gif">
+
+	<script type="text/javascript" src="st2_pie.js"></script>
+	<script type="text/javascript" src="st3_pie.js"></script>
+	<script type="text/javascript" src="st4_pie.js"></script>
+	<script type="text/javascript" src="st5_pie.js"></script>
+
+	<style>
+		/* Remove the navbar's default margin-bottom and rounded borders */
+
+		.navbar {
+			margin-bottom: 0;
+			border-radius: 0;
+		}
+
+		/* Add a gray background color and some padding to the footer */
+
+		footer {
+			background-color: #f2f2f2;
+			padding: 25px;
+		}
+
+		body {
+			background-color: #ffffff;
+			font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+			font-size: 14px;
+			line-height: 1.5;
+		}
+
+		}
+
+		#dnt {
+			text-align: -webkit-center;
+		}
+
+		.btn-block {
+			display: -webkit-inline-box;
+			width: 80%;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="">X Automation</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<a href="/index.html">Sanity</a>
+					</li>
+					<li>
+						<a href="/archive/">Archive</a>
+					</li>
+					<li>
+						<a href="/regression/">Regression</a>
+					</li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<a href="url:8080" target='_blank'>
+							<span class="glyphicon glyphicon-log-in"></span> Login</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+	<div class="jumbotron">
+		<div class="container text-center">
+			<h1>X
+				<!--<image src="logo.png" width='5.3%' height='5.3%'>--></image>Automation</h1>
+			<h2>Execution Dashboard
+				<i class="fa fa-bar-chart"></i>
+			</h2>
+		</div>
+	</div>
+
+	<div class="container-fluid bg-3 text-center">
+		<h3>Environments
+			<i class="fa fa-globe"></i>
+		</h3>
+		<br>
+		<div class="row">
+			<div class="col-sm-3">
+				<h4>Env1</h4>
+				<a href="/st2/index.html">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						T2
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<h4>Env2</h4>
+				<a href="/st3/index.html">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						T3
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<h4>Env3</h4>
+				<a href="/st4/index.html">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						T4
+					</button>
+				</a>
+			</div>
+			<div class="col-sm-3">
+				<h4>Env4</h4>
+				<a href="/st5/index.html">
+					<button type="button" class="btn btn-primary btn-lg btn-block">
+						T5
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+
+	<br>
+	<div class="container-fluid bg-3 text-center">
+		<h4>Last Execution Summary
+			<i class="fa fa-history"></i>
+		</h4>
+		<h6>
+			<i class="fa fa-gears"></i> - Automation </h6>
+	</div>
+	<hr width="95%">
+	<div class="row">
+		<div class="container-fluid bg-3 text-center">
+			<div class="row">
+				<div class="col-sm-3" id="dnt">
+					<div id="donutchart_ST2" style="width: 350px; height: 350px;"></div>
+				</div>
+				<div class="col-sm-3" id="dnt">
+					<div id="donutchart_ST3" style="width: 350px; height: 350px;"></div>
+				</div>
+				<div class="col-sm-3" id="dnt">
+					<div id="donutchart_ST4" style="width: 350px; height: 350px;"></div>
+				</div>
+				<div class="col-sm-3" id="dnt">
+					<div id="donutchart_ST5" style="width: 350px; height: 350px;"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="container-fluid text-center" style="color:grey;font-size:12px;">
+		<center>
+			<image src="Images/logo.svg" width='4%' height='4%'></image>
+			<b>Proprietary Information:</b>
+			Not for use or disclosure outside of the X family of companies, except under written agreement.
+			<br> Authored by :
+			<a href="mailto:email">Vishwanath Malakar</a> , Email DL:
+			<a href="mailto:email">email</a>
+		</center>
+	</footer>
+
+</body>
+
+</html>
